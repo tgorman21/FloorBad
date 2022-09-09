@@ -7,23 +7,24 @@ using UnityEngine;
 public class ScoreCounter : MonoBehaviour
 {
     public TextMeshProUGUI tmp;
-    private int score;
+    public Variables score;
     // Start is called before the first frame update
     void Start()
     {
         tmp.text = "";
+        score.score = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        tmp.text = "" + score;
+        tmp.text = "" + score.score;
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Ball"))
         {
-            score = score -= 1;
+            score.score = score.score -= 1;
             Destroy(collision.gameObject);
         }
     }

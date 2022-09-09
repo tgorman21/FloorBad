@@ -407,6 +407,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: {fileID: 43496787}
+  score: {fileID: 11400000, guid: c7dd1e59dd75ebf4c85a4dd0e233d68d, type: 2}
 --- !u!1 &291061951
 GameObject:
   m_ObjectHideFlags: 0
@@ -1529,7 +1530,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b354010d2e22feb45bddffd6cea3752a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  speed: {fileID: 11400000, guid: c7dd1e59dd75ebf4c85a4dd0e233d68d, type: 2}
 --- !u!212 &1364413038
 SpriteRenderer:
   m_ObjectHideFlags: 0

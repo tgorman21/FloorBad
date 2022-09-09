@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    public float speed;
+    public Variables speed;
     private Rigidbody2D rb;
     // Start is called before the first frame update
     void Start()
@@ -18,6 +18,6 @@ public class Movement : MonoBehaviour
         float moveHorizontal = Input.GetAxis("Horizontal");
 
 
-        rb.velocity = new Vector2(moveHorizontal * speed, 0);
+        rb.velocity = new Vector2(moveHorizontal * speed.speed, 0);
     }
 }
